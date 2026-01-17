@@ -8,10 +8,11 @@ const ServiceCard = ({ name, description }) => {
   useEffect(() => {
     setMounted(true);
   }, []);
+  
   return (
     <div
       className={`w-full p-2 mob:p-4 rounded-lg transition-all ease-out duration-300 ${
-        mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-slate-50"
+        mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-slate-800"
       } hover:scale-105 link`}
     >
       <h1 className="text-3xl">{name ? name : "Heading"}</h1>
