@@ -7,10 +7,11 @@ import Image from 'next/image'
 // Data
 import { showResume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
+import { useTheme } from "next-themes";
 
 const Resume = () => {
   const router = useRouter();
-  const theme = "dark";
+  const theme = useTheme();
   const [mount, setMount] = useState(false);
 
    useEffect(() => {
