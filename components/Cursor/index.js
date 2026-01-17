@@ -4,7 +4,7 @@ import "custom-cursor-react/dist/index.css";
 import { useTheme } from "next-themes";
 
 const Cursor = () => {
-  const theme = useTheme();
+  const { theme } = useTheme();
   const [mount, setMount] = useState();
 
   const getCusomColor = () => {

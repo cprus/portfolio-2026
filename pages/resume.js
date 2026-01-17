@@ -11,7 +11,7 @@ import { useTheme } from "next-themes";
 
 const Resume = () => {
   const router = useRouter();
-  const theme = useTheme();
+  const { theme } = useTheme();
   const [mount, setMount] = useState(false);
 
    useEffect(() => {
