@@ -3,7 +3,7 @@ import { useTheme } from "next-themes";
 import data from "../../data/portfolio.json";
 
 const Button = ({ children, type, onClick, classes }) => {
-  const { theme } = useTheme();
+  const theme = "dark";
   if (type === "primary") {
     return (
       <button

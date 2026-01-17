@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ServiceCard = ({ name, description }) => {
-  const { theme } = useTheme();
+  const theme = "dark";
   const [mounted, setMounted] = useState();
 
   useEffect(() => {
